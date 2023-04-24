@@ -1,5 +1,6 @@
 # Simplicity Anti-Cheat
-A minecraft bedrock non-experimental anti-cheat addon for worlds, realms, or servers.
+
+A minecraft bedrock non-experimental anti-cheat addon for worlds, realms, or servers. There is also a [discord server](https://discord.com/invite/yyBRVcpmh7) for support and discussion over the addon!
 
 ![image](https://user-images.githubusercontent.com/95001376/233902821-6031d785-e1ce-4da2-8616-32695d85a1af.png)
 
@@ -19,8 +20,3 @@ Here are some useful commands to help you more with the anti-cheat!
 - `/function simplicity/config/witherdespawn/enable` - Enables wither despawning. Any new withers that spawn instantly get despawned.
 - `/function simplicity/config/witherdespawn/disable` - Disables wither despawning.
 - `/function simplicity/setup/spawn` - Creates an 80x80 spawn protection radius. Players cannot destroy or harm each other and mobs (not animals) will despawn in this area. It is recommended to run the main function command here!
-
-# Credits and Other
-Simplicity Anti-Cheat was created by chrstn43. Please read the license before doing anything with the code. There's also a discord server, don't forget to join it!
-
-<img src="https://discordapp.com/api/guilds/1094014037077020695/widget.png?style=banner1" alt="Discord Banner 1"/>
