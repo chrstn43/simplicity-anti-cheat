@@ -1,10 +1,13 @@
 gamerule commandblockoutput false
-gamemode survival @a[tag=!admin]
 scoreboard objectives add warn dummy
 scoreboard objectives add banned dummy
 scoreboard objectives add itemcount dummy
+scoreboard objectives add autogamemode dummy
 scoreboard objectives add witherdespawn dummy
+
+# Misc
 effect @e[type=armor_stand,tag=main] invisibility 999999 255 true
+execute at @e[type=armor_stand,tag=main,scores={autogamemode=1}] run gamemode survival @a[tag=!admin]
 
 # Spawn
 effect @e[type=armor_stand,tag=spawn] invisibility 999999 255 true
