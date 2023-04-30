@@ -5,7 +5,7 @@ scoreboard objectives add itemcount dummy
 scoreboard objectives add autogamemode dummy
 scoreboard objectives add witherdespawn dummy
 
-# Config
+# Configs
 execute at @e[type=simplicity:dummy,name=main,scores={autogamemode=1}] run gamemode survival @a[tag=!admin]
 execute at @e[type=simplicity:dummy,name=main,scores={witherdespawn=1}] run event entity @e[type=wither] witherdespawn
 
