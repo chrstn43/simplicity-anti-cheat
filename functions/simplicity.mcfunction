@@ -6,14 +6,15 @@ scoreboard objectives add autogamemode dummy
 scoreboard objectives add witherdespawn dummy
 
 # Configs
+execute unless entity @e[type=simplicity:dummy,name=main] at @r run summon simplicity:dummy main ~ ~5 ~
 execute at @e[type=simplicity:dummy,name=main,scores={autogamemode=1}] run gamemode survival @a[tag=!admin]
 execute at @e[type=simplicity:dummy,name=main,scores={witherdespawn=1}] run event entity @e[type=wither] witherdespawn
 
 # Spawn
-effect @e[type=simplicity:dummy,name=spawn] invisibility 999999 255 true
-execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=80] weakness 3 255 true
-execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=80] instant_health 3 255 true
-execute at @e[type=simplicity:dummy,name=spawn] run event entity @e[r=80] clearlag
+execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=40] weakness 3 255 true
+execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=40] resistance 3 255 true
+execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=40] instant_health 3 255 true
+execute at @e[type=simplicity:dummy,name=spawn] run event entity @e[r=40] clearlag
 
 # Warn
 execute at @a[scores={warn=3}] run scoreboard players set @s[tag=!admin] banned 1
