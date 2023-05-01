@@ -25,6 +25,8 @@ Here are all (if not most) of the commands to help you more with the anti-cheat!
 - `/function simplicity/admin/clearlag` - It will despawn the unwanted entities but keep the important entities. More info on this command is in the [Setup & Tips](https://github.com/chrstn43/simplicity-anti-cheat#setup--tips) section.
 - `/function simplicity/config/witherdespawn/enable` - Enables wither despawning. Any new withers that spawn instantly get despawned.
 - `/function simplicity/config/witherdespawn/disable` - Disables wither despawning.
+- `/function simplicity/config/shulkerboxban/enable` - Causes shulker boxes to be cleared from player inventories if they don't have the admin tag.
+- `/function simplicity/config/shulkerboxban/disable` - Disables shulker boxes from getting cleared in player inventories.
 - `/function simplicity/config/autogamemode/enable` - Enables all players without the admin tag to constantly get set to survival mode.
 - `/function simplicity/config/autogamemode/disable` - Disables all players without the admin tag constantly getting set to survival mode.
 - `/function simplicity/setup/spawn` - Creates an 80x80 spawn protection radius. Players cannot destroy or harm each other and mobs (not animals) will despawn in this area.
