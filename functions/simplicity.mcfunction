@@ -4,11 +4,14 @@ scoreboard objectives add banned dummy
 scoreboard objectives add itemcount dummy
 scoreboard objectives add autogamemode dummy
 scoreboard objectives add witherdespawn dummy
+scoreboard objectives add shulkerboxban dummy
 
 # Configs
 execute unless entity @e[type=simplicity:dummy,name=main] at @r run summon simplicity:dummy main ~ ~5 ~
 execute at @e[type=simplicity:dummy,name=main,scores={autogamemode=1}] run gamemode survival @a[tag=!admin]
 execute at @e[type=simplicity:dummy,name=main,scores={witherdespawn=1}] run event entity @e[type=wither] witherdespawn
+execute at @e[type=simplicity:dummy,name=main,scores={shulkerboxban=1}] run clear @a[tag=!admin] shulker_box
+execute at @e[type=simplicity:dummy,name=main,scores={shulkerboxban=1}] run clear @a[tag=!admin] undyed_shulker_box
 
 # Spawn
 execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=40] weakness 3 255 true
