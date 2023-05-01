@@ -230,18 +230,6 @@
        "test": "has_equipment",
        "domain": "any",
        "operator": "==",
-       "value": "minecraft:shulker_box"
-      },
-      {
-       "test": "has_equipment",
-       "domain": "any",
-       "operator": "==",
-       "value": "minecraft:undyed_shulker_box"
-      },
-      {
-       "test": "has_equipment",
-       "domain": "any",
-       "operator": "==",
        "value": "minecraft:mob_spawner"
       },
       {
