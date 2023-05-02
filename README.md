@@ -2,7 +2,7 @@
 
 A minecraft bedrock non-experimental anti-cheat addon for worlds, realms, or servers. There is also a discord server for support and discussion over the addon, which you can join [here](https://discord.com/invite/yyBRVcpmh7).
 
-![image](https://user-images.githubusercontent.com/95001376/233902821-6031d785-e1ce-4da2-8616-32695d85a1af.png)
+![image](https://user-images.githubusercontent.com/95001376/235580670-51408ac4-3265-43f8-bc33-9d44ba1af363.png)
 
 ## Introduction
 This minecraft bedrock anti-cheat addon is one of a kind. It can be used on worlds, realms, or servers that don't have experimental options enabled and it has a very straightforward (or simple) setup. Remember to read the license before doing any modifications or distributions of the addon!
