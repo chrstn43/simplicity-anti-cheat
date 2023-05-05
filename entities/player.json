@@ -8,13 +8,10 @@
    "is_experimental": false,
    "scripts": {
     "animate": [
-     "check",
      "itemban"
     ]
    },
    "animations": {
-    "check": "controller.animation.ops.check",
-    "run": "animation.ops.run",
     "itemban": "controller.animation.itemban"
    }
   },
