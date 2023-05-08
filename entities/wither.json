@@ -157,7 +157,7 @@
       },
         "witherdespawn": {
         "add": {
-            "component_groups": ["clearlag"]
+            "component_groups": ["witherdespawn"]
         }
       }
     }
