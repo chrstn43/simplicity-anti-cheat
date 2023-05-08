@@ -501,7 +501,8 @@
       }
      ]
     }
-   },
+   }
+  },
    "events": {
     "minecraft:gain_bad_omen": {
      "add": {
@@ -539,4 +540,3 @@
    }
   }
  }
-}
