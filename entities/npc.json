@@ -4,18 +4,29 @@
   "description": {
    "identifier": "minecraft:npc",
    "is_spawnable": false,
-   "is_summonable": false,
+   "is_summonable": true,
    "is_experimental": false
   },
+  "component_groups": {
+     "npcdespawn": {
+       "minecraft:instant_despawn": {
+           "remove_child_entities": true
+       }
+     }
+   },
   "components": {
    "minecraft:type_family": {
-    "family": [
-     "npc"
-    ]
-   },
-   "minecraft:instant_despawn": {
-    "remove_child_entities": true
+    "family": [ "npc" ]
+   }
+  },
+   "events": {
+    "minecraft:entity_spawned": {
+    },
+    "npcdespawn": {
+     "add": {
+        "component_groups": ["npcdespawn"]
+     }
+    }
    }
   }
  }
-}
