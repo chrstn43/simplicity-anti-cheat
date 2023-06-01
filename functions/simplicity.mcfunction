@@ -4,6 +4,7 @@ scoreboard objectives add banned dummy
 scoreboard objectives add itemcount dummy
 scoreboard objectives add npcdespawn dummy
 scoreboard objectives add autogamemode dummy
+scoreboard objectives add dragondespawn dummy
 scoreboard objectives add witherdespawn dummy
 scoreboard objectives add shulkerboxban dummy
 
@@ -11,15 +12,16 @@ scoreboard objectives add shulkerboxban dummy
 execute unless entity @e[type=simplicity:dummy,name=main] at @r run summon simplicity:dummy main ~ ~5 ~
 execute at @e[type=simplicity:dummy,name=main,scores={autogamemode=1}] run gamemode survival @a[tag=!admin]
 execute at @e[type=simplicity:dummy,name=main,scores={npcdespawn=1}] run event entity @e[type=npc] npcdespawn
+execute at @e[type=simplicity:dummy,name=main,scores={dragondespawn=1}] run event entity @e[type=ender_dragon] dragondespawn
 execute at @e[type=simplicity:dummy,name=main,scores={witherdespawn=1}] run event entity @e[type=wither] witherdespawn
 execute at @e[type=simplicity:dummy,name=main,scores={shulkerboxban=1}] run clear @a[tag=!admin] shulker_box
 execute at @e[type=simplicity:dummy,name=main,scores={shulkerboxban=1}] run clear @a[tag=!admin] undyed_shulker_box
 
 # Spawn
-execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=40] weakness 3 255 true
-execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=40] resistance 3 255 true
-execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=40] instant_health 3 255 true
-execute at @e[type=simplicity:dummy,name=spawn] run event entity @e[r=40] clearlag
+execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=25] weakness 3 255 true
+execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=25] resistance 3 255 true
+execute at @e[type=simplicity:dummy,name=spawn] run effect @a[tag=!admin,r=25] instant_health 3 255 true
+execute at @e[type=simplicity:dummy,name=spawn] run event entity @e[r=25] clearlag
 
 # Warn
 execute at @a[scores={warn=3}] run scoreboard players set @s[tag=!admin] banned 1
