@@ -2,7 +2,7 @@
 
 A minecraft bedrock non-experimental anti-cheat addon for worlds, realms, or servers. There is also a discord server for support and discussion over the addon, which you can join [here](https://discord.com/invite/yyBRVcpmh7).
 
-⚠ **README.md is outdated! You can ask or look for updated commands in the official discord server linked above.** ⚠
+⚠ **README.md is outdated! You can ask or look for updated commands in the official discord server linked above.**
 
 ![image](https://user-images.githubusercontent.com/95001376/235580670-51408ac4-3265-43f8-bc33-9d44ba1af363.png)
 
